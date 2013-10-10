@@ -1,4 +1,4 @@
-WTScrollViewKeyboardManager
+WTAScrollViewKeyboardManager
 ===========================
 
 A class to manage scroll view content and scroll indicator insets when the keyboard appears and disappears
@@ -11,7 +11,7 @@ Usage
 =====
 
 ```
-WTScrollViewKeyboardManager *manager = [[WTScrollViewKeyboardManager alloc] initWithScrollView:[self scrollView] viewController:self];
+WTAScrollViewKeyboardManager *manager = [[WTAScrollViewKeyboardManager alloc] initWithScrollView:[self scrollView] viewController:self];
 [self setKeyboardManager:manager];
 ```
 
