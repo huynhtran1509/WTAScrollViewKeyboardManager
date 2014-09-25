@@ -11,8 +11,31 @@ Usage
 =====
 
 ```
-WTAScrollViewKeyboardManager *manager = [[WTAScrollViewKeyboardManager alloc] initWithScrollView:[self scrollView] viewController:self];
-[self setKeyboardManager:manager];
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  
+  WTAKeyboardManager *manager = [WTAKeyboardManager new];
+  [self setKeyboardManager:manager];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+  [super viewWillAppear:animated];
+  [[self keyboardManager] setShouldUpdateScrollViewInsets:YES];
+  [[self keyboardManager] setScrollView:self.scrollView];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+  [super viewWillDisappear:animated];
+  [[self keyboardManager] setShouldUpdateScrollViewInsets:NO];
+}
+
+- (IBAction)doneButtonPressed:(id)sender
+{
+  [WTAKeyboardManager dismissKeyboard];
+}
 ```
 
 Demo
