@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WTARootViewController">
             <connections>
                 <outlet property="scrollView" destination="AJh-5K-UCu" id="ghA-rK-yXH"/>
                 <outlet property="view" destination="1" id="3"/>
-                <outletCollection property="textFields" destination="ixk-Oi-PNz" id="e8x-D8-Ipx"/>
-                <outletCollection property="textFields" destination="glX-kA-o4F" id="9IS-1F-BsK"/>
-                <outletCollection property="textFields" destination="UEX-HU-PdB" id="K1p-2j-fQe"/>
-                <outletCollection property="textFields" destination="Yok-Cl-Jmk" id="GpW-cP-z9h"/>
-                <outletCollection property="textFields" destination="qVo-5M-uNE" id="MtL-VP-lFz"/>
-                <outletCollection property="textFields" destination="Vdv-qk-MYo" id="jax-Qf-vrr"/>
-                <outletCollection property="textFields" destination="zkl-tZ-rSz" id="YUU-BD-vIz"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

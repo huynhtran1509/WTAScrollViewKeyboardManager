@@ -8,13 +8,12 @@
 
 #import "WTARootViewController.h"
 
-#import "WTAScrollViewKeyboardManager.h"
+#import "WTAKeyboardManager.h"
 
 @interface WTARootViewController ()
 
 @property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, strong) WTAScrollViewKeyboardManager *keyboardManager;
-@property (nonatomic, strong) IBOutletCollection(UITextField) NSArray *textFields;
+@property (nonatomic, strong) WTAKeyboardManager *keyboardManager;
 
 @end
 
@@ -24,26 +23,42 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    [self setTitle:@"Form"];
     [self setupKeyboardManager];
 }
 
 - (void)viewDidLayoutSubviews
 {
-    [[self scrollView] setContentSize:CGSizeMake(CGRectGetWidth([[self scrollView] bounds]), CGRectGetHeight([[self scrollView] bounds]))];
+    [super viewDidLayoutSubviews];
+    [[self scrollView] setContentSize:CGSizeMake(CGRectGetWidth([[self scrollView] bounds]),
+                                                 CGRectGetHeight([[self scrollView] bounds]))];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[self keyboardManager] setShouldUpdateScrollViewInsets:YES];
+    [[self keyboardManager] setScrollView:self.scrollView];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[self keyboardManager] setShouldUpdateScrollViewInsets:NO];
 }
 
 #pragma mark - Instance Methods
 
 - (void)setupKeyboardManager
 {
-    WTAScrollViewKeyboardManager *manager = [[WTAScrollViewKeyboardManager alloc] initWithScrollView:[self scrollView] viewController:self];
+    WTAKeyboardManager *manager = [WTAKeyboardManager new];
     [self setKeyboardManager:manager];
-    
 }
 
 - (IBAction)submitButtonPressed:(id)sender
 {
-    [[self textFields] makeObjectsPerformSelector:@selector(resignFirstResponder)];
+    [WTAKeyboardManager dismissKeyboard];
 }
 
 @end

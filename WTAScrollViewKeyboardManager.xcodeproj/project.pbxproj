@@ -14,25 +14,10 @@
 		22BBA2D3180330160097DEC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBA2D2180330160097DEC6 /* main.m */; };
 		22BBA2D7180330160097DEC6 /* WTAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBA2D6180330160097DEC6 /* WTAAppDelegate.m */; };
 		22BBA2D9180330160097DEC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BBA2D8180330160097DEC6 /* Images.xcassets */; };
-		22BBA2E0180330160097DEC6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BBA2DF180330160097DEC6 /* XCTest.framework */; };
-		22BBA2E1180330160097DEC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BBA2C6180330160097DEC6 /* Foundation.framework */; };
-		22BBA2E2180330160097DEC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BBA2CA180330160097DEC6 /* UIKit.framework */; };
-		22BBA2EA180330160097DEC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22BBA2E8180330160097DEC6 /* InfoPlist.strings */; };
-		22BBA2EC180330160097DEC6 /* WTScrollViewKeyboardManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBA2EB180330160097DEC6 /* WTScrollViewKeyboardManagerTests.m */; };
-		22BBA2F9180330450097DEC6 /* WTAScrollViewKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBA2F8180330450097DEC6 /* WTAScrollViewKeyboardManager.m */; };
+		22BBA2F9180330450097DEC6 /* WTAKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBA2F8180330450097DEC6 /* WTAKeyboardManager.m */; };
 		22BBA2FE180330660097DEC6 /* WTARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBA2FC180330660097DEC6 /* WTARootViewController.m */; };
 		22BBA2FF180330660097DEC6 /* WTARootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BBA2FD180330660097DEC6 /* WTARootViewController.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		22BBA2E3180330160097DEC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22BBA2BB180330160097DEC6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22BBA2C2180330160097DEC6;
-			remoteInfo = WTScrollViewKeyboardManager;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		22BBA2C3180330160097DEC6 /* WTAScrollViewKeyboardManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTAScrollViewKeyboardManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,13 +31,12 @@
 		22BBA2D5180330160097DEC6 /* WTAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAAppDelegate.h; sourceTree = "<group>"; };
 		22BBA2D6180330160097DEC6 /* WTAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAAppDelegate.m; sourceTree = "<group>"; };
 		22BBA2D8180330160097DEC6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		22BBA2DE180330160097DEC6 /* WTAScrollViewKeyboardManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTAScrollViewKeyboardManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BBA2DF180330160097DEC6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		22BBA2E7180330160097DEC6 /* WTAScrollViewKeyboardManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WTAScrollViewKeyboardManagerTests-Info.plist"; sourceTree = "<group>"; };
 		22BBA2E9180330160097DEC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22BBA2EB180330160097DEC6 /* WTScrollViewKeyboardManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTScrollViewKeyboardManagerTests.m; sourceTree = "<group>"; };
-		22BBA2F7180330450097DEC6 /* WTAScrollViewKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAScrollViewKeyboardManager.h; sourceTree = "<group>"; };
-		22BBA2F8180330450097DEC6 /* WTAScrollViewKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAScrollViewKeyboardManager.m; sourceTree = "<group>"; };
+		22BBA2F7180330450097DEC6 /* WTAKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAKeyboardManager.h; sourceTree = "<group>"; };
+		22BBA2F8180330450097DEC6 /* WTAKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAKeyboardManager.m; sourceTree = "<group>"; };
 		22BBA2FB180330660097DEC6 /* WTARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTARootViewController.h; sourceTree = "<group>"; };
 		22BBA2FC180330660097DEC6 /* WTARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTARootViewController.m; sourceTree = "<group>"; };
 		22BBA2FD180330660097DEC6 /* WTARootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTARootViewController.xib; sourceTree = "<group>"; };
@@ -66,16 +50,6 @@
 				22BBA2C9180330160097DEC6 /* CoreGraphics.framework in Frameworks */,
 				22BBA2CB180330160097DEC6 /* UIKit.framework in Frameworks */,
 				22BBA2C7180330160097DEC6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22BBA2DB180330160097DEC6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22BBA2E0180330160097DEC6 /* XCTest.framework in Frameworks */,
-				22BBA2E2180330160097DEC6 /* UIKit.framework in Frameworks */,
-				22BBA2E1180330160097DEC6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				22BBA2C3180330160097DEC6 /* WTAScrollViewKeyboardManager.app */,
-				22BBA2DE180330160097DEC6 /* WTAScrollViewKeyboardManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,8 +140,8 @@
 		22BBA2F6180330350097DEC6 /* WTAScrollViewKeyboardManager */ = {
 			isa = PBXGroup;
 			children = (
-				22BBA2F7180330450097DEC6 /* WTAScrollViewKeyboardManager.h */,
-				22BBA2F8180330450097DEC6 /* WTAScrollViewKeyboardManager.m */,
+				22BBA2F7180330450097DEC6 /* WTAKeyboardManager.h */,
+				22BBA2F8180330450097DEC6 /* WTAKeyboardManager.m */,
 			);
 			name = WTAScrollViewKeyboardManager;
 			sourceTree = "<group>";
@@ -203,24 +176,6 @@
 			productReference = 22BBA2C3180330160097DEC6 /* WTAScrollViewKeyboardManager.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22BBA2DD180330160097DEC6 /* WTAScrollViewKeyboardManagerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22BBA2F2180330160097DEC6 /* Build configuration list for PBXNativeTarget "WTAScrollViewKeyboardManagerTests" */;
-			buildPhases = (
-				22BBA2DA180330160097DEC6 /* Sources */,
-				22BBA2DB180330160097DEC6 /* Frameworks */,
-				22BBA2DC180330160097DEC6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22BBA2E4180330160097DEC6 /* PBXTargetDependency */,
-			);
-			name = WTAScrollViewKeyboardManagerTests;
-			productName = WTScrollViewKeyboardManagerTests;
-			productReference = 22BBA2DE180330160097DEC6 /* WTAScrollViewKeyboardManagerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,13 +183,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WT;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "WillowTree Apps";
-				TargetAttributes = {
-					22BBA2DD180330160097DEC6 = {
-						TestTargetID = 22BBA2C2180330160097DEC6;
-					};
-				};
 			};
 			buildConfigurationList = 22BBA2BE180330160097DEC6 /* Build configuration list for PBXProject "WTAScrollViewKeyboardManager" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -249,7 +199,6 @@
 			projectRoot = "";
 			targets = (
 				22BBA2C2180330160097DEC6 /* WTAScrollViewKeyboardManager */,
-				22BBA2DD180330160097DEC6 /* WTAScrollViewKeyboardManagerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,14 +214,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22BBA2DC180330160097DEC6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22BBA2EA180330160097DEC6 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -282,28 +223,12 @@
 			files = (
 				22BBA2D3180330160097DEC6 /* main.m in Sources */,
 				22BBA2D7180330160097DEC6 /* WTAAppDelegate.m in Sources */,
-				22BBA2F9180330450097DEC6 /* WTAScrollViewKeyboardManager.m in Sources */,
+				22BBA2F9180330450097DEC6 /* WTAKeyboardManager.m in Sources */,
 				22BBA2FE180330660097DEC6 /* WTARootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22BBA2DA180330160097DEC6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22BBA2EC180330160097DEC6 /* WTScrollViewKeyboardManagerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		22BBA2E4180330160097DEC6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22BBA2C2180330160097DEC6 /* WTAScrollViewKeyboardManager */;
-			targetProxy = 22BBA2E3180330160097DEC6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22BBA2CF180330160097DEC6 /* InfoPlist.strings */ = {
@@ -329,7 +254,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -369,7 +293,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -405,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WTScrollViewKeyboardManager/WTAScrollViewKeyboardManager-Prefix.pch";
+				GCC_PREFIX_HEADER = "WTAScrollViewKeyboardManager/WTAScrollViewKeyboardManager-Prefix.pch";
 				INFOPLIST_FILE = "WTScrollViewKeyboardManager/WTAScrollViewKeyboardManager-Info.plist";
 				PRODUCT_NAME = WTAScrollViewKeyboardManager;
 				WRAPPER_EXTENSION = app;
@@ -418,52 +341,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WTScrollViewKeyboardManager/WTAScrollViewKeyboardManager-Prefix.pch";
+				GCC_PREFIX_HEADER = "WTAScrollViewKeyboardManager/WTAScrollViewKeyboardManager-Prefix.pch";
 				INFOPLIST_FILE = "WTScrollViewKeyboardManager/WTAScrollViewKeyboardManager-Info.plist";
 				PRODUCT_NAME = WTAScrollViewKeyboardManager;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		22BBA2F3180330160097DEC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WTScrollViewKeyboardManager.app/WTScrollViewKeyboardManager";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WTScrollViewKeyboardManager/WTScrollViewKeyboardManager-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "WTScrollViewKeyboardManagerTests/WTAScrollViewKeyboardManagerTests-Info.plist";
-				PRODUCT_NAME = WTAScrollViewKeyboardManagerTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		22BBA2F4180330160097DEC6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WTScrollViewKeyboardManager.app/WTScrollViewKeyboardManager";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WTScrollViewKeyboardManager/WTScrollViewKeyboardManager-Prefix.pch";
-				INFOPLIST_FILE = "WTScrollViewKeyboardManagerTests/WTAScrollViewKeyboardManagerTests-Info.plist";
-				PRODUCT_NAME = WTAScrollViewKeyboardManagerTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -484,15 +365,6 @@
 			buildConfigurations = (
 				22BBA2F0180330160097DEC6 /* Debug */,
 				22BBA2F1180330160097DEC6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22BBA2F2180330160097DEC6 /* Build configuration list for PBXNativeTarget "WTAScrollViewKeyboardManagerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22BBA2F3180330160097DEC6 /* Debug */,
-				22BBA2F4180330160097DEC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
