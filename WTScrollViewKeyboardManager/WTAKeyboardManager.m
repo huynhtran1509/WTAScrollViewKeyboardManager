@@ -141,7 +141,13 @@
     UIEdgeInsets contentInsets = self.initialContentInsets;
     UIEdgeInsets scrollIndicatorInsets = self.initialScrollIndicatorInsets;
     
-    CGRect intersection = CGRectIntersection(keyboardFrame, self.scrollView.frame);
+    // Get the scroll view's frame relative to it's window
+    UIWindow *window = self.scrollView.window;
+    CGRect scrollViewFrame = self.scrollView.frame;
+    scrollViewFrame.origin = [window convertPoint:scrollViewFrame.origin
+                                       fromWindow:nil];
+    
+    CGRect intersection = CGRectIntersection(keyboardFrame, scrollViewFrame);
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     if (UIInterfaceOrientationIsPortrait(orientation))
     {

@@ -19,7 +19,11 @@
     
     WTARootViewController *rootViewController = [WTARootViewController new];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
-    [[self window] setRootViewController:navigationController];
+    UITabBarController *tabController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
+    UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:0];
+    [rootViewController setTabBarItem:item];
+    [tabController setViewControllers:@[navigationController]];
+    [[self window] setRootViewController:tabController];
     
     [self.window makeKeyAndVisible];
     return YES;
