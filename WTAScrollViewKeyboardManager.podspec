@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/willowtreeapps/WTAScrollViewKeyboardManager"
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/willowtreeapps/WTAScrollViewKeyboardManager.git", :tag => s.version }
-  s.source_files  = 'WTAScrollViewKeyboardManager/WTAKeyboardManager.{h,m}'
+  s.source_files  = 'WTScrollViewKeyboardManager/WTAKeyboardManager.{h,m}'
   s.requires_arc = true
 end
