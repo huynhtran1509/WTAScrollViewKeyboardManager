@@ -142,10 +142,10 @@
     UIEdgeInsets scrollIndicatorInsets = self.initialScrollIndicatorInsets;
     
     // Get the scroll view's frame relative to it's window
-    UIWindow *window = self.scrollView.window;
+    UIView *superView = self.scrollView.superview;
     CGRect scrollViewFrame = self.scrollView.frame;
-    scrollViewFrame.origin = [window convertPoint:scrollViewFrame.origin
-                                       fromWindow:nil];
+    scrollViewFrame.origin = [superView convertPoint:scrollViewFrame.origin
+                                              toView:nil];
     
     CGRect intersection = CGRectIntersection(keyboardFrame, scrollViewFrame);
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
