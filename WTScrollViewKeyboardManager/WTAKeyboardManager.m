@@ -183,27 +183,16 @@
                      }];
 }
 
-#pragma mark - Delegate notification
-
-- (void)notifyDelegate:(SEL)delegateSelector object:(id)object
-{
-    if (self.delegate && [[self delegate] respondsToSelector:delegateSelector])
-    {
-        objc_msgSend(self.delegate,
-                     delegateSelector,
-                     self,
-                     object);
-    }
-}
-
 #pragma mark - Keyboard notifications
 
 - (void)keyboardDidChangeFrameNotification:(NSNotification*)notification
 {
     [self setKeyboardInfo:notification.userInfo];
-    [self notifyDelegate:@selector(keyboardManager:keyboardDidChangeFrame:)
-                  object:notification.userInfo];
     
+    if ([self.delegate respondsToSelector:@selector(keyboardManager:keyboardDidChangeFrame:)])
+    {
+        [self.delegate keyboardManager:self keyboardDidChangeFrame:notification.userInfo];
+    }
     if (self.shouldUpdateScrollViewInsets)
     {
         [self updateScrollViewInsets:notification.userInfo];
@@ -212,9 +201,10 @@
 
 - (void)keyboardWillShowNotification:(NSNotification *)notification
 {
-    [self notifyDelegate:@selector(keyboardManager:keyboardWillShow:)
-                  object:notification.userInfo];
-    
+    if ([self.delegate respondsToSelector:@selector(keyboardManager:keyboardWillShow:)])
+    {
+        [self.delegate keyboardManager:self keyboardDidShow:notification.userInfo];
+    }
     if (self.shouldUpdateScrollViewInsets)
     {
         [self updateScrollViewInsets:notification.userInfo animated:YES];
@@ -223,8 +213,10 @@
 
 - (void)keyboardWillHideNotification:(NSNotification *)notification
 {
-    [self notifyDelegate:@selector(keyboardManager:keyboardWillHide:)
-                  object:notification.userInfo];
+    if ([self.delegate respondsToSelector:@selector(keyboardManager:keyboardWillHide:)])
+    {
+        [self.delegate keyboardManager:self keyboardWillHide:notification.userInfo];
+    }
     if (self.shouldUpdateScrollViewInsets)
     {
         [self updateScrollViewInsets:notification.userInfo animated:YES];
@@ -239,8 +231,10 @@
 - (void)keyboardDidShowNotification:(NSNotification *)notification
 {
     [self setKeyboardInfo:notification.userInfo];
-    [self notifyDelegate:@selector(keyboardManager:keyboardDidShow:)
-                  object:notification.userInfo];
+    if ([self.delegate respondsToSelector:@selector(keyboardManager:keyboardDidShow:)])
+    {
+        [self.delegate keyboardManager:self keyboardDidShow:notification.userInfo];
+    }
     [self setKeyboardHidden:NO];
     
     // Add frame change notification observer
@@ -253,8 +247,11 @@
 - (void)keyboardDidHideNotification:(NSNotification *)notification
 {
     [self setKeyboardInfo:notification.userInfo];
-    [self notifyDelegate:@selector(keyboardManager:keyboardDidHide:)
-                  object:notification.userInfo];
+    if ([self.delegate respondsToSelector:@selector(keyboardManager:keyboardDidHide:)])
+    {
+        [self.delegate keyboardManager:self keyboardDidHide:notification.userInfo];
+    }
+    
     [self setKeyboardHidden:YES];
 }
 
