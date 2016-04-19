@@ -148,7 +148,6 @@
                                               toView:nil];
     
     CGRect intersection = CGRectIntersection(keyboardFrame, scrollViewFrame);
-    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
 
     contentInsets.bottom += intersection.size.height;
     scrollIndicatorInsets.bottom += intersection.size.height;
