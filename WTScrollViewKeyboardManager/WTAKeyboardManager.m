@@ -149,16 +149,10 @@
     
     CGRect intersection = CGRectIntersection(keyboardFrame, scrollViewFrame);
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-    if (UIInterfaceOrientationIsPortrait(orientation))
-    {
-        contentInsets.bottom += intersection.size.height;
-        scrollIndicatorInsets.bottom += intersection.size.height;
-    }
-    else
-    {
-        contentInsets.bottom += intersection.size.width;
-        scrollIndicatorInsets.bottom += intersection.size.width;
-    }
+
+    contentInsets.bottom += intersection.size.height;
+    scrollIndicatorInsets.bottom += intersection.size.height;
+
     
     CGFloat duration = (animated) ? animationDuration.floatValue : 0.0f;
     [UIView animateWithDuration:duration
